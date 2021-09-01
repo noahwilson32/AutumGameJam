@@ -30,6 +30,6 @@ public class SpawnWitch : MonoBehaviour
         float rY = Random.Range(-10f, 10f);
         yesSpawn = true;
 
-        GameObject witchInstance = Instantiate(witchPrefab, new Vector3(transform.position.x,rY,transform.position.z), Quaternion.identity);
+        GameObject witchInstance = Instantiate(witchPrefab, new Vector3(transform.position.x + 7,rY,transform.position.z), Quaternion.identity);
     }
 }
